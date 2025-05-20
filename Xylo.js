@@ -54,7 +54,7 @@ dotenv.config()
 
 const groupMetadataCache = new NodeCache({ stdTTL: 5 * 60, useClones: false })
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://dbUser:dbUserPass@cluster0.d4gmvqn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"'
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://dbUser:dbUserPass@cluster0.d4gmvqn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 const DB_NAME = process.env.DB_NAME || 'xylo_ai'
 
 const globalDB = new MongoDB(MONGODB_URI)
@@ -110,7 +110,7 @@ global.prefix = new RegExp(
     ) +
     ']'
 )
-global.opts['db'] = 'mongodb+srv://dbUser:dbUserPass@cluster0.d4gmvqn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"'
+global.opts['db'] = 'mongodb+srv://dbUser:dbUserPass@cluster0.d4gmvqn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 
 
 const { state, saveCreds, closeConnection } = await useMongoDBAuthState(MONGODB_URI, DB_NAME)
