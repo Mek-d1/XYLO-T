@@ -14,7 +14,7 @@ let pairingCode = null
 let isConnected = false
 let botProcess = null
 let botStats = null 
-const mongodbUri = process.env.MONGODB_URI || 'mongodb+srv://dbUser:dbUserPass@cluster0.d4gmvqn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"'
+const mongodbUri = process.env.MONGODB_URI || 'mongodb+srv://dbUser:dbUserPass@cluster0.d4gmvqn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 const phoneNumber = process.env.PHONE_NUMBER || ''
 
 figlet(
